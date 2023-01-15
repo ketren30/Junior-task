@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/junior-task/static/css/main.afab39d4.css",
+    "main.js": "/junior-task/static/js/main.2859ee9f.js",
+    "index.html": "/junior-task/index.html",
+    "main.afab39d4.css.map": "/junior-task/static/css/main.afab39d4.css.map",
+    "main.2859ee9f.js.map": "/junior-task/static/js/main.2859ee9f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.afab39d4.css",
+    "static/js/main.2859ee9f.js"
+  ]
+}
