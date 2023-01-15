@@ -1,0 +1,40 @@
+.modal {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    width: 350px;
+    height: fit-content;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    background-color: rgb(231, 231, 250);
+    border: dashed 1px rgb(184, 184, 211);
+    border-radius: 5px;
+    box-shadow: 3px -3px 3px 0 rgb(184, 184, 211);
+    padding: 20px;
+}
+.close {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    margin-left: 100%;
+    margin-right: auto;
+    margin-top: -15px;
+    cursor: pointer;
+}
+.btn {
+    left: 175px;
+    height: 30px;
+    background: linear-gradient(rgb(219, 233, 238), rgb(207, 207, 245), rgb(219, 233, 238));
+    font-family: 'Courier New', Courier, monospace;
+    color: darkslateblue;
+    margin: 10px;
+    font-weight: 800px;
+    font-size: large;
+    border-radius: 10px;
+    border: 1px solid darkslateblue;
+}
+.btn:disabled {
+    background-color: linear-gradient(rgb(225, 226, 226), rgb(171, 171, 172), rgb(225, 226, 226));
+    border: 1px solid rgb(166, 166, 167);
+    color: rgb(121, 121, 122);
+}

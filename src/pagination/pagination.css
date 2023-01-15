@@ -1,0 +1,40 @@
+
+.page-item {
+    list-style-type: none;
+    float: left;
+    width: 45px;
+    height: 40px;
+    border: 1px solid rgb(206, 205, 205);
+    box-sizing: border-box;
+    margin: -1px -1px 0 0;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    color: darkslateblue;
+    
+}
+li:last-of-type {
+    border-radius: 0 5px 5px 0;
+}
+li:first-of-type {
+    border-radius:  5px 0 0 5px;
+}
+
+.pagination {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    height: 39px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.page-item:hover {
+    background-color: rgb(243, 240, 240);
+}
+.page-item.active {
+    background-color: rgb(230, 228, 228);
+}

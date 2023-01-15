@@ -1,0 +1,9 @@
+.descr {
+    margin-top: 30px;
+    border: dashed 1px rgb(173, 172, 172);
+    font-family: 'Courier New', Courier, monospace;
+    width: 848px;
+}
+.descr span {
+    font-weight: 700;
+}

@@ -1,0 +1,11 @@
+.butt {
+    cursor: pointer;
+    color: black;
+    font-size: larger;
+    font-weight: 1000;
+    
+}
+.current {
+    background-color: rgb(227, 227, 233);
+    font-weight: 1000;
+}
