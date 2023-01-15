@@ -26,7 +26,9 @@ export const Main = () => {
     const [sortConfig, setSortConfig]=useState({});
     
     const takeData = (link) => {
-      fetch(link)
+      fetch(link, {
+        mode: 'cors'
+      })
       .then((res) => {return res.json().then((result)=> {
         setData(result);
         setReservedData(result);
