@@ -27,9 +27,7 @@ export const Main = () => {
     
     const takeData = (link) => {
       fetch(link, {
-        mode: 'cors', headers: {
-          'Access-Control-Allow-Origin':'*'
-        }
+        mode: 'no-cors'
       })
       .then((res) => {return res.json().then((result)=> {
         setData(result);
