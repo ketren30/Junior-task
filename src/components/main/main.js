@@ -12,7 +12,7 @@ export const Main = () => {
     const [isMore, setIsMore]=useState();
     
     const [currentPage, setCurrentPage]=useState(1);
-    const [peoplePerPage]=useState(50);
+    const [peoplePerPage]=useState(25);
     const [chosenPerson, setChosenPerson] = useState(null);
     const lastPersonIndex = currentPage * peoplePerPage;
     const firstPersonIndex = lastPersonIndex - peoplePerPage;
@@ -26,18 +26,16 @@ export const Main = () => {
     const [sortConfig, setSortConfig]=useState({});
     
     const takeData = (link) => {
-      fetch(link, {
-        mode: 'no-cors'
-      })
+      fetch(link)
       .then((res) => {return res.json().then((result)=> {
-        setData(result);
-        setReservedData(result);
+        setData(result.record);
+        setReservedData(result.record);
         setLoading(false);
       })})
     }
     useEffect(()=> {
-      if (isMore===false) takeData('https://my-json-server.typicode.com/ketren30/junior-task') 
-      else if (isMore) takeData("http://www.filltext.com/?rows=1000&id=%7Bnumber%7C1000%7D&firstName=%7BfirstName%7D&delay=3&lastName=%7BlastName%7D&email=%7Bemail%7D&phone=%7Bphone%7C(xxx)xxx-xx-xx%7D&address=%7BaddressObject%7D&description=%7Blorem%7C32%7D");
+      if (isMore===false) takeData('https://api.jsonbin.io/v3/b/63ca7a2301a72b59f24f71f2') 
+      else if (isMore) takeData("https://api.jsonbin.io/v3/b/63ca780601a72b59f24f70ec");
     }, [isMore] )
     
     const GetIndex = (index) => {
